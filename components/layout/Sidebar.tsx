@@ -43,7 +43,7 @@ export default function Sidebar() {
       >
         <div className="flex items-center gap-2">
           <span className="text-blue-400 font-bold text-sm">&lt;/&gt;</span>
-          <span className="text-white font-bold text-sm">TechPortfolio</span>
+          <span className="text-white font-bold text-sm">TechPortfolio-2222</span>
         </div>
         <button
           onClick={() => dispatch(toggleMobileMenu())}
@@ -83,7 +83,7 @@ export default function Sidebar() {
           >
             &lt;/&gt;
           </div>
-          <span className="text-white font-bold text-[15px] tracking-wide">TechPortfolio</span>
+          <span className="text-white font-bold text-[15px] tracking-wide">TechPortfolio-222222</span>
         </div>
 
         {/* Nav */}

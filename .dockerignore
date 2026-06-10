@@ -1,0 +1,44 @@
+# Dependencies (reinstalled inside container)
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (rebuilt inside container)
+.next
+out
+
+# Development & tooling
+.git
+.gitignore
+.github
+*.md
+!AGENTS.md
+
+# Environment files (never bake secrets into image)
+.env
+.env.*
+!.env.example
+
+# Editor / OS junk
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+Thumbs.db
+
+# CI / CD
+Jenkinsfile
+docker-compose*.yml
+.dockerignore
+
+# Test artefacts
+coverage
+__tests__
+*.test.ts
+*.spec.ts
+
+# Local scripts / docs
+scripts
+docs
