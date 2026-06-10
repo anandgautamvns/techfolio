@@ -8,7 +8,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevPortfolio — Anand Gautam",
+  title: "TechPortfolio — Anand Gautam",
   description: "Senior Software Developer — Full Stack Web & Mobile",
 };
 

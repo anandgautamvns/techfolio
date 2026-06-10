@@ -1,18 +1,18 @@
 export const developerProfile = {
   name: "Anand Gautam",
-  role: "Senior Software Developer",
+  role: "Senior Software Engineer",
   tagline: "Full Stack Web & Mobile Developer",
   bio: "I build scalable, performant, and user-centric applications for the web and mobile. With 8+ years of experience, I turn ideas into impactful digital solutions.",
   available: true,
-  email: "anand@techfolio.dev",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA",
+  email: "anandgautamvns@gmail.com",
+  phone: "+91 8542073022",
+  location: "Varanasi, Uttar Pradesh, India",
   cvUrl: "/cv.pdf",
   socials: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/anandgautamvns",
+    linkedin: "https://www.linkedin.com/in/anandgautamvns/",
     twitter: "https://twitter.com",
-    instagram: "https://instagram.com",
+    instagram: "https://www.naukri.com/mnjuser/profile",
   },
 };
 
@@ -93,9 +93,9 @@ export const experience = [
   {
     id: 1,
     role: "Senior Software Engineer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    period: "2021 – Present",
+    company: "Netcracker Technology Solutions",
+    location: "Gurgaon, Haryana, India",
+    period: "2025 – Present",
     type: "Full-time",
     description: "Led a team of 6 engineers to build a SaaS platform serving 50K+ users. Architected micro-services with Node.js and deployed on AWS.",
     achievements: [
