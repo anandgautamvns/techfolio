@@ -39,15 +39,16 @@ export default function Sidebar() {
       {/* Mobile top bar */}
       <div
         className="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3"
-        style={{ background: "#0d1117", borderBottom: "1px solid #1a2744" }}
+        style={{ background: "var(--bg-sidebar)", borderBottom: "1px solid var(--border-color)" }}
       >
         <div className="flex items-center gap-2">
           <span className="text-blue-400 font-bold text-sm">&lt;/&gt;</span>
-          <span className="text-white font-bold text-sm">TechPortfolio</span>
+          <span className="font-bold text-sm" style={{ color: "var(--text-primary)" }}>TechPortfolio</span>
         </div>
         <button
           onClick={() => dispatch(toggleMobileMenu())}
-          className="text-slate-400 hover:text-white p-1"
+          className="p-1 transition-colors"
+          style={{ color: "var(--text-muted)" }}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -70,20 +71,22 @@ export default function Sidebar() {
           "lg:translate-x-0",
           mobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
         ].join(" ")}
-        style={{ background: "#0d1117", borderRight: "1px solid #1a2744" }}
+        style={{ background: "var(--bg-sidebar)", borderRight: "1px solid var(--border-color)" }}
       >
         {/* Logo */}
         <div
           className="flex items-center gap-2.5 px-5 py-5"
-          style={{ borderBottom: "1px solid #1a2744" }}
+          style={{ borderBottom: "1px solid var(--border-color)" }}
         >
           <div
             className="flex items-center justify-center w-8 h-8 rounded-lg text-blue-400 font-bold text-[13px]"
-            style={{ background: "rgba(59,130,246,0.12)", border: "1px solid rgba(59,130,246,0.2)" }}
+            style={{ background: "var(--logo-bg)", border: "1px solid var(--logo-border)" }}
           >
             &lt;/&gt;
           </div>
-          <span className="text-white font-bold text-[15px] tracking-wide">TechPortfolio</span>
+          <span className="font-bold text-[15px] tracking-wide" style={{ color: "var(--text-primary)" }}>
+            TechPortfolio
+          </span>
         </div>
 
         {/* Nav */}
@@ -99,18 +102,25 @@ export default function Sidebar() {
                     className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all"
                     style={
                       active
-                        ? { background: "rgba(37,99,235,0.15)", color: "#60a5fa", border: "1px solid rgba(59,130,246,0.2)" }
-                        : { color: "#64748b", border: "1px solid transparent" }
+                        ? {
+                            background: "var(--nav-active-bg)",
+                            color: "#60a5fa",
+                            border: "1px solid var(--nav-active-border)",
+                          }
+                        : {
+                            color: "var(--text-muted)",
+                            border: "1px solid transparent",
+                          }
                     }
                     onMouseEnter={(e) => {
                       if (!active) {
-                        (e.currentTarget as HTMLAnchorElement).style.color = "#e2e8f0";
-                        (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.04)";
+                        (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-primary)";
+                        (e.currentTarget as HTMLAnchorElement).style.background = "var(--nav-hover-bg)";
                       }
                     }}
                     onMouseLeave={(e) => {
                       if (!active) {
-                        (e.currentTarget as HTMLAnchorElement).style.color = "#64748b";
+                        (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-muted)";
                         (e.currentTarget as HTMLAnchorElement).style.background = "transparent";
                       }
                     }}
@@ -125,7 +135,7 @@ export default function Sidebar() {
         </nav>
 
         {/* Footer */}
-        <div className="px-4 py-4 space-y-4" style={{ borderTop: "1px solid #1a2744" }}>
+        <div className="px-4 py-4 space-y-4" style={{ borderTop: "1px solid var(--border-color)" }}>
           {/* Social icons */}
           <div className="flex items-center gap-3.5">
             {socials.map(({ href, Icon, label }) => (
@@ -136,9 +146,9 @@ export default function Sidebar() {
                 rel="noopener noreferrer"
                 aria-label={label}
                 className="transition-colors"
-                style={{ color: "#475569" }}
+                style={{ color: "var(--text-faint)" }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#60a5fa")}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "#475569")}
+                onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "var(--text-faint)")}
               >
                 <Icon size={15} />
               </a>
@@ -148,14 +158,18 @@ export default function Sidebar() {
           {/* Download CV */}
           <button
             className="flex items-center justify-center gap-2 w-full px-3 py-2 rounded-lg text-xs font-medium transition-all"
-            style={{ background: "#111827", border: "1px solid #1e2d47", color: "#94a3b8" }}
+            style={{
+              background: "var(--bg-card)",
+              border: "1px solid var(--border-color)",
+              color: "var(--text-secondary)",
+            }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLButtonElement).style.background = "#1a2744";
-              (e.currentTarget as HTMLButtonElement).style.color = "#e2e8f0";
+              (e.currentTarget as HTMLButtonElement).style.background = "var(--border-color)";
+              (e.currentTarget as HTMLButtonElement).style.color = "var(--text-primary)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLButtonElement).style.background = "#111827";
-              (e.currentTarget as HTMLButtonElement).style.color = "#94a3b8";
+              (e.currentTarget as HTMLButtonElement).style.background = "var(--bg-card)";
+              (e.currentTarget as HTMLButtonElement).style.color = "var(--text-secondary)";
             }}
           >
             <Download size={13} />
@@ -164,13 +178,16 @@ export default function Sidebar() {
 
           {/* Theme toggle */}
           <div className="flex items-center justify-between">
-            <span className="text-[10px] font-semibold uppercase tracking-widest" style={{ color: "#334155" }}>
+            <span
+              className="text-[10px] font-semibold uppercase tracking-widest"
+              style={{ color: "var(--text-muted)" }}
+            >
               Theme
             </span>
             <button
               onClick={() => dispatch(toggleTheme())}
               className="relative flex items-center w-12 h-6 rounded-full transition-colors"
-              style={{ background: "#111827", border: "1px solid #1e2d47" }}
+              style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
               aria-label="Toggle theme"
             >
               <Sun size={9} className="absolute left-1.5 text-yellow-500/70" />

@@ -2,6 +2,7 @@
 
 import { Copy, Check } from "lucide-react";
 import { useState } from "react";
+import { useAppSelector } from "@/lib/hooks";
 
 const lines = [
   [{ t: "keyword", v: "const " }, { t: "var", v: "developer" }, { t: "op", v: " = {" }],
@@ -21,34 +22,46 @@ const lines = [
   [{ t: "comment", v: "// Let's build something amazing together 🚀" }],
 ];
 
-const color: Record<string, string> = {
+const darkTokens: Record<string, string> = {
   keyword: "#c084fc",
-  var: "#e2e8f0",
-  prop: "#93c5fd",
-  string: "#86efac",
-  op: "#cbd5e1",
+  var:     "#e2e8f0",
+  prop:    "#93c5fd",
+  string:  "#86efac",
+  op:      "#cbd5e1",
   comment: "#475569",
+};
+
+const lightTokens: Record<string, string> = {
+  keyword: "#7c3aed",
+  var:     "#1e293b",
+  prop:    "#1d4ed8",
+  string:  "#15803d",
+  op:      "#475569",
+  comment: "#94a3b8",
 };
 
 export default function CodePanel() {
   const [copied, setCopied] = useState(false);
+  const isDark = useAppSelector((s) => s.portfolio.isDark);
+  const color = isDark ? darkTokens : lightTokens;
 
   return (
-    <div className="rounded-xl overflow-hidden" style={{ background: "#0f1829", border: "1px solid #1a2744" }}>
+    <div className="rounded-xl overflow-hidden" style={{ background: "var(--code-bg)", border: "1px solid var(--border-color)" }}>
       {/* Header */}
       <div
         className="flex items-center justify-between px-4 py-2.5"
-        style={{ background: "#0a1020", borderBottom: "1px solid #1a2744" }}
+        style={{ background: "var(--code-header-bg)", borderBottom: "1px solid var(--border-color)" }}
       >
         <div className="flex items-center gap-1.5">
           <span className="w-3 h-3 rounded-full bg-red-500/70 block" />
           <span className="w-3 h-3 rounded-full bg-yellow-500/70 block" />
           <span className="w-3 h-3 rounded-full bg-green-500/70 block" />
         </div>
-        <span className="text-[#64748b] text-xs font-mono">about.me.ts</span>
+        <span className="text-xs font-mono" style={{ color: "var(--text-muted)" }}>about.me.ts</span>
         <button
           onClick={() => { setCopied(true); setTimeout(() => setCopied(false), 1800); }}
-          className="text-slate-600 hover:text-slate-400 transition-colors"
+          className="transition-colors"
+          style={{ color: "var(--text-faint)" }}
           aria-label="Copy"
         >
           {copied ? <Check size={12} className="text-green-400" /> : <Copy size={12} />}
@@ -59,10 +72,12 @@ export default function CodePanel() {
       <div className="px-3 py-3 font-mono text-[11px] leading-[1.65] overflow-x-auto">
         {lines.map((row, i) => (
           <div key={i} className="flex gap-3 min-w-0">
-            <span className="text-[#1e3a5f] w-5 text-right shrink-0 select-none tabular-nums">{i + 1}</span>
+            <span className="w-5 text-right shrink-0 select-none tabular-nums" style={{ color: "var(--border-hover)" }}>
+              {i + 1}
+            </span>
             <span className="whitespace-pre">
               {row.map((tok, j) => (
-                <span key={j} style={{ color: color[tok.t] ?? "#cbd5e1" }}>{tok.v}</span>
+                <span key={j} style={{ color: color[tok.t] ?? color.op }}>{tok.v}</span>
               ))}
             </span>
           </div>

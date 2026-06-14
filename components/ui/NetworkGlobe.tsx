@@ -2,10 +2,12 @@
 
 const CX = 250, CY = 250;
 
+const round = (n: number) => Math.round(n * 1e3) / 1e3;
+
 function ring(r: number, count: number, offset = 0) {
   return Array.from({ length: count }, (_, i) => {
     const a = (i / count) * Math.PI * 2 + offset;
-    return { x: CX + r * Math.cos(a), y: CY + r * Math.sin(a) };
+    return { x: round(CX + r * Math.cos(a)), y: round(CY + r * Math.sin(a)) };
   });
 }
 
