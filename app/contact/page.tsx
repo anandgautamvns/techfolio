@@ -55,6 +55,16 @@ export default function ContactPage() {
                 <MapPin size={18} />
               </div>
               <div>
+                <p className="text-xs text-slate-500 mb-0.5">Current Location</p>
+                <p className="text-white text-sm">{profile?.currentLocation}</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/40">
+              <div className="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                <MapPin size={18} />
+              </div>
+              <div>
                 <p className="text-xs text-slate-500 mb-0.5">Location</p>
                 <p className="text-white text-sm">{profile?.location}</p>
               </div>

@@ -1,0 +1,6 @@
+[
+  { "id": 1, "value": "8+",   "label": "Years Experience",   "icon": "calendar"  },
+  { "id": 2, "value": "40+",  "label": "Projects Completed", "icon": "briefcase" },
+  { "id": 3, "value": "30+",  "label": "Happy Clients",      "icon": "smile"     },
+  { "id": 4, "value": "100%", "label": "Commitment",         "icon": "rocket"    }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "Anand Gautam",
+  "role": "Senior Software Engineer",
+  "tagline": "Full Stack Web & Mobile Developer",
+  "bio": "I build scalable, performant, and user-centric applications for the web and mobile. With 8+ years of experience, I turn ideas into impactful digital solutions.",
+  "available": true,
+  "email": "anandgautamvns@gmail.com",
+  "phone": "+91 8542073022",
+  "location": "Varanasi, Uttar Pradesh, India",
+  "currentLocation": "Gurgaon, Haryana, India",
+  "cvUrl": "/cv.pdf",
+  "socials": {
+    "github": "https://github.com/anandgautamvns",
+    "linkedin": "https://www.linkedin.com/in/anandgautamvns/",
+    "twitter": "https://twitter.com",
+    "instagram": "https://www.naukri.com/mnjuser/profile"
+  }
+}

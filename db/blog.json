@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Building Scalable APIs with NestJS and GraphQL",
+    "excerpt": "A deep dive into architecting production-grade APIs using NestJS modules, guards, and GraphQL federation.",
+    "date": "2026-05-15",
+    "readTime": "8 min read",
+    "category": "Backend",
+    "tags": [
+      "NestJS",
+      "GraphQL",
+      "Node.js"
+    ],
+    "slug": "building-scalable-apis-nestjs-graphql"
+  },
+  {
+    "id": 2,
+    "title": "Flutter State Management: Riverpod vs Bloc in 2026",
+    "excerpt": "An honest comparison of the two most popular Flutter state management approaches for large-scale apps.",
+    "date": "2026-04-22",
+    "readTime": "6 min read",
+    "category": "Mobile",
+    "tags": [
+      "Flutter",
+      "Riverpod",
+      "Bloc"
+    ],
+    "slug": "flutter-state-management-riverpod-vs-bloc"
+  },
+  {
+    "id": 3,
+    "title": "Next.js 16 App Router: What's New and How to Migrate",
+    "excerpt": "Exploring the breaking changes in Next.js 16, new conventions, and a step-by-step migration guide.",
+    "date": "2026-03-10",
+    "readTime": "10 min read",
+    "category": "Frontend",
+    "tags": [
+      "Next.js",
+      "React",
+      "Migration"
+    ],
+    "slug": "nextjs-16-app-router-whats-new"
+  },
+  {
+    "id": 4,
+    "title": "Zero-Downtime Deployments with Docker and AWS ECS",
+    "excerpt": "How we achieved zero-downtime blue/green deployments using Docker Compose, ECS, and ALB target groups.",
+    "date": "2026-02-05",
+    "readTime": "7 min read",
+    "category": "DevOps",
+    "tags": [
+      "Docker",
+      "AWS",
+      "CI/CD"
+    ],
+    "slug": "zero-downtime-deployments-docker-aws"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "React",      "icon": "⚛️" },
+  { "id": 2, "name": "Next.js",    "icon": "N"  },
+  { "id": 3, "name": "Node.js",    "icon": "🟢" },
+  { "id": 4, "name": "TypeScript", "icon": "TS" },
+  { "id": 5, "name": "Flutter",    "icon": "🐦" }
+]

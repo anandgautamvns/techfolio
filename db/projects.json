@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "title": "SaaS Dashboard Platform",
+    "description": "A multi-tenant SaaS dashboard with real-time analytics, role-based access, and custom reporting.",
+    "image": "/projects/saas.png",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "NestJS",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": true,
+    "category": "Web"
+  },
+  {
+    "id": 2,
+    "title": "E-Commerce Mobile App",
+    "description": "Full-featured Flutter app with cart, payments via Stripe, push notifications, and offline support.",
+    "image": "/projects/ecommerce.png",
+    "tech": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Stripe"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": true,
+    "category": "Mobile"
+  },
+  {
+    "id": 3,
+    "title": "GraphQL API Gateway",
+    "description": "Federated GraphQL gateway that aggregates 5 microservices with caching, auth, and rate limiting.",
+    "image": "/projects/api.png",
+    "tech": [
+      "Node.js",
+      "GraphQL",
+      "Apollo",
+      "Docker",
+      "AWS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": true,
+    "category": "Backend"
+  },
+  {
+    "id": 4,
+    "title": "Real-Time Chat App",
+    "description": "WebSocket-based chat application with rooms, file sharing, and message encryption.",
+    "image": "/projects/chat.png",
+    "tech": [
+      "React",
+      "Socket.io",
+      "Node.js",
+      "MongoDB"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": false,
+    "category": "Web"
+  },
+  {
+    "id": 5,
+    "title": "DevOps CI/CD Pipeline",
+    "description": "Automated pipeline with GitHub Actions, Docker, and AWS ECS deployment with zero downtime.",
+    "image": "/projects/devops.png",
+    "tech": [
+      "GitHub Actions",
+      "Docker",
+      "AWS ECS",
+      "Terraform"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": false,
+    "category": "DevOps"
+  },
+  {
+    "id": 6,
+    "title": "AI Content Generator",
+    "description": "LLM-powered tool for generating and editing blog posts, social captions, and ad copy.",
+    "image": "/projects/ai.png",
+    "tech": [
+      "Next.js",
+      "OpenAI API",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "https://demo.example.com",
+    "featured": false,
+    "category": "AI"
+  }
+]

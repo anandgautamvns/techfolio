@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "role": "Senior Software Engineer",
+    "company": "Netcracker Technology Solutions",
+    "location": "Gurgaon, Haryana, India",
+    "period": "2025 – Present",
+    "type": "Full-time",
+    "description": "Working as a Senior Software Engineer, responsible for designing, developing, and maintaining scalable web and mobile applications for enterprise telecom solutions. Building modern frontend applications using Next.js, React.js, TypeScript, and Tailwind CSS, while developing cross-platform mobile applications with React Native, Redux, and RTK Query. Collaborating with cross-functional teams to deliver high-quality software, integrating GraphQL APIs using Apollo Client, conducting code reviews, optimizing application performance, and ensuring best practices in software architecture, testing, and development.",
+    "achievements": [
+      "Build Web Application using Next Js, React Js, Typescript and Tailwind CSS.",
+      "Build iOS and Android apps using React Native, Redux and RTK Query and TypeScript.",
+      "This includes designing, developing, and testing user interfaces, as well as integrating with native APIs.",
+      "Use Apollo GraphQL for gql APIs. This involves creating and maintaining GraphQL queries and mutations, as well as working with the Apollo client library.",
+      "Fix bugs. This includes identifying and debugging issues in existing code, as well as writing unit tests to prevent future bugs.",
+      "Do code reviews of peer code. This involves providing feedback on the code quality and readability of other developers' code."
+    ],
+    "tech": [
+      "React",
+      "React Native",
+      "Redux",
+      "RTK Query",
+      "Node.js",
+      "Apollo GraphQL",
+      "TypeScript",
+      "Git",
+      "Gitlab",
+      "Tailwind CSS",
+      "Android Studio",
+      "Xcode",
+      "Android",
+      "IOS"
+    ]
+  },
+  {
+    "id": 2,
+    "role": "Senior Software Engineer",
+    "company": "Protiviti Capability Center India",
+    "location": "Gurugram, Haryana, India",
+    "period": "Aug 2021 – Aug 2025",
+    "type": "Full-time",
+    "description": "Led the development, modernization, and delivery of enterprise-scale web and mobile applications for the Successware platform. Collaborated with stakeholders, managed development teams, and built scalable solutions for service-oriented businesses using React, React Native, TypeScript, and Node.js.",
+    "achievements": [
+      "Improved web and mobile application performance, reducing page load times by over 60%",
+      "Led development of Successware web and mobile applications for booking, dispatching, and field service operations",
+      "Served as the primary point of contact between development teams and clients/stakeholders",
+      "Managed project resources, timelines, and budgets, improving delivery efficiency by 20%",
+      "Mentored and supervised a team of 5 developers, promoting collaboration and productivity",
+      "Upgraded React, React Native, TypeScript, Node.js, React-DnD, and Ant Design to the latest versions",
+      "Participated in architecture design and strategic technical discussions with cross-functional teams",
+      "Established and maintained high code quality standards through reviews and best practices",
+      "Developed and maintained cross-platform mobile applications for iOS and Android using React Native",
+      "Built scalable and reusable components for enterprise-level web and mobile solutions"
+    ],
+    "tech": [
+      "React",
+      "React Native",
+      "Redux",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "React DnD",
+      "Ant Design",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "Git",
+      "Android",
+      "iOS",
+      "Apollo GraphQL"
+    ]
+  },
+  {
+    "id": 3,
+    "role": "Software Developer",
+    "company": "MikeLegal",
+    "location": "Gurugram, Haryana, India",
+    "period": "Apr 2019 – Aug 2021",
+    "type": "Full-time",
+    "description": "Developed and maintained web, mobile, and AI-powered legal technology solutions focused on intellectual property management, contract analysis, and enterprise productivity. Collaborated with cross-functional teams to deliver scalable applications using React, React Native, Python, and Django while ensuring high-quality code and exceptional user experiences.",
+    "achievements": [
+      "Developed key modules for MikeIPSuite, a comprehensive intellectual property management platform used by legal professionals",
+      "Implemented robust features using React, Redux, Python, and Django technologies",
+      "Built intuitive and responsive user interfaces using Ant Design, SASS, and LESS",
+      "Collaborated with product managers, designers, and stakeholders to deliver projects on schedule",
+      "Contributed to MikeDocuSieve, an AI-powered contract drafting and document review solution",
+      "Enhanced Microsoft Word and Excel plugins using React Office Add-ins for document management workflows",
+      "Maintained high document review and analysis standards to meet client requirements",
+      "Developed and maintained MikeIris Mobile App, the administrative support platform for the IPSuite ecosystem",
+      "Built cross-platform mobile applications using React Native integrated with Django backend services",
+      "Ensured application scalability, performance, and operational consistency across platforms"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Django",
+      "Ant Design",
+      "SASS",
+      "LESS",
+      "React Office Add-ins",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "Git"
+    ]
+  },
+  {
+    "id": 4,
+    "role": "UI Developer",
+    "company": "TurningCloud Solutions Private Limited",
+    "location": "Gurugram, Haryana, India",
+    "period": "Aug 2018 – Apr 2019",
+    "type": "Internship → Full-time",
+    "description": "Contributed to the development of enterprise web applications in the GST compliance and retail supply chain domains. Built responsive and interactive user interfaces using React and Redux while collaborating with backend teams to deliver scalable business solutions.",
+    "achievements": [
+      "Developed responsive and user-friendly interfaces for EaseMyGST, a GST compliance and invoice management platform",
+      "Built dynamic web components using React.js and Redux for efficient state management",
+      "Integrated front-end applications with backend services and APIs",
+      "Implemented modern UI designs using HTML5, CSS3, and JavaScript",
+      "Contributed to Supplymint's Open-to-Buy (OTB) retail planning and inventory management platform",
+      "Collaborated with senior developers and cross-functional teams to deliver features on schedule",
+      "Improved user experience and application responsiveness across devices and browsers",
+      "Gained hands-on experience in enterprise-scale React application development"
+    ],
+    "tech": [
+      "React.js",
+      "Redux",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "Bootstrap",
+      "Git"
+    ]
+  }
+]

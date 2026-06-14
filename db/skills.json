@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "React / Next.js",
+    "level": 95,
+    "category": "Frontend"
+  },
+  {
+    "id": 2,
+    "name": "TypeScript",
+    "level": 92,
+    "category": "Frontend"
+  },
+  {
+    "id": 3,
+    "name": "Tailwind CSS",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 4,
+    "name": "Node.js",
+    "level": 88,
+    "category": "Backend"
+  },
+  {
+    "id": 5,
+    "name": "NestJS",
+    "level": 82,
+    "category": "Backend"
+  },
+  {
+    "id": 6,
+    "name": "GraphQL",
+    "level": 80,
+    "category": "Backend"
+  },
+  {
+    "id": 7,
+    "name": "Flutter",
+    "level": 85,
+    "category": "Mobile"
+  },
+  {
+    "id": 8,
+    "name": "MongoDB",
+    "level": 78,
+    "category": "Database"
+  },
+  {
+    "id": 9,
+    "name": "PostgreSQL",
+    "level": 80,
+    "category": "Database"
+  },
+  {
+    "id": 10,
+    "name": "AWS",
+    "level": 75,
+    "category": "DevOps"
+  },
+  {
+    "id": 11,
+    "name": "Docker",
+    "level": 78,
+    "category": "DevOps"
+  },
+  {
+    "id": 12,
+    "name": "CI/CD",
+    "level": 76,
+    "category": "DevOps"
+  }
+]
