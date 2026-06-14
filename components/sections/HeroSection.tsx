@@ -57,11 +57,15 @@ function FloatingCard({
 }) {
   return (
     <div
-      style={style}
+      style={{
+        background: "var(--bg-card)",
+        border: "1px solid var(--border-color)",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.18)",
+        ...style,
+      }}
       className={[
         "absolute flex items-center justify-center w-14 h-14",
-        "rounded-2xl border shadow-2xl backdrop-blur-sm",
-        "border-[#1a2744] bg-[#0f1829]/90",
+        "rounded-2xl backdrop-blur-sm",
         className,
       ].join(" ")}
     >
@@ -83,11 +87,25 @@ export default function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
             <span className="pulse-dot relative flex h-2.5 w-2.5 rounded-full bg-green-500" />
           </span>
-          <span className="text-sm text-slate-400">Available for new opportunities</span>
+          <span className="text-sm" style={{ color: "var(--text-secondary)" }}>
+            Available for new opportunities
+          </span>
         </div>
         <Link
           href="/contact"
-          className="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-600 text-white text-sm font-medium hover:border-slate-400 hover:bg-white/5 transition-all"
+          className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all"
+          style={{
+            border: "1px solid var(--border-color)",
+            color: "var(--text-primary)",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = "var(--border-hover)";
+            (e.currentTarget as HTMLAnchorElement).style.background = "var(--nav-hover-bg)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLAnchorElement).style.borderColor = "var(--border-color)";
+            (e.currentTarget as HTMLAnchorElement).style.background = "transparent";
+          }}
         >
           Let&apos;s Connect <Send size={13} />
         </Link>
@@ -97,9 +115,11 @@ export default function HeroSection() {
       <div className="relative flex items-center min-h-[520px] lg:min-h-[560px]">
         {/* Left: text */}
         <div className="relative z-10 flex flex-col max-w-[480px]">
-          <p className="text-slate-400 text-lg mb-1 font-light">Hi, I&apos;m</p>
+          <p className="text-lg mb-1 font-light" style={{ color: "var(--text-secondary)" }}>
+            Hi, I&apos;m
+          </p>
 
-          <h1 className="text-5xl xl:text-6xl font-extrabold text-white leading-tight tracking-tight mb-3">
+          <h1 className="text-5xl xl:text-6xl font-extrabold leading-tight tracking-tight mb-3" style={{ color: "var(--text-primary)" }}>
             {profile?.name ?? "Your Name"}
           </h1>
 
@@ -107,11 +127,11 @@ export default function HeroSection() {
             {profile?.role ?? "Senior Software Developer"}
           </h2>
 
-          <p className="text-slate-400 text-base mb-5">
+          <p className="text-base mb-5" style={{ color: "var(--text-secondary)" }}>
             {profile?.tagline ?? "Full Stack Web & Mobile Developer"}
           </p>
 
-          <p className="text-[#94a3b8] text-[15px] leading-7 mb-8 max-w-[430px]">
+          <p className="text-[15px] leading-7 mb-8 max-w-[430px]" style={{ color: "var(--text-secondary)" }}>
             I build scalable, performant, and user-centric applications for the web and mobile.
             With{" "}
             <span className="text-blue-400 font-semibold">8+ years</span>{" "}
@@ -128,8 +148,19 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/contact"
-              className="flex items-center gap-2 px-6 py-3 rounded-xl border font-semibold text-sm text-slate-300 hover:text-white transition-all hover:bg-white/5"
-              style={{ borderColor: "#233459" }}
+              className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-all"
+              style={{
+                border: "1px solid var(--border-hover)",
+                color: "var(--text-secondary)",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-primary)";
+                (e.currentTarget as HTMLAnchorElement).style.background = "var(--nav-hover-bg)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLAnchorElement).style.color = "var(--text-secondary)";
+                (e.currentTarget as HTMLAnchorElement).style.background = "transparent";
+              }}
             >
               <User size={15} /> Contact Me
             </Link>
@@ -137,30 +168,27 @@ export default function HeroSection() {
         </div>
 
         {/* Center: globe + floating icons */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden md:block"
-          style={{ width: "480px", height: "480px" }}>
-          {/* Globe */}
+        <div
+          className="absolute right-0 top-1/2 -translate-y-1/2 hidden md:block"
+          style={{ width: "480px", height: "480px" }}
+        >
           <div className="absolute inset-0 opacity-85">
             <NetworkGlobe />
           </div>
 
-          {/* React */}
-          <FloatingCard className="animate-float-a" style={{ top: "30px", left: "120px" } as React.CSSProperties}>
+          <FloatingCard className="animate-float-a" style={{ top: "30px", left: "120px" }}>
             <ReactLogo />
           </FloatingCard>
 
-          {/* Flutter */}
-          <FloatingCard className="animate-float-b" style={{ top: "160px", right: "0px" } as React.CSSProperties}>
+          <FloatingCard className="animate-float-b" style={{ top: "160px", right: "0px" }}>
             <FlutterLogo />
           </FloatingCard>
 
-          {/* Node.js */}
-          <FloatingCard className="animate-float-c" style={{ bottom: "120px", left: "155px" } as React.CSSProperties}>
+          <FloatingCard className="animate-float-c" style={{ bottom: "120px", left: "155px" }}>
             <NodeLogo />
           </FloatingCard>
 
-          {/* Material UI */}
-          <FloatingCard className="animate-float-d" style={{ bottom: "60px", right: "30px" } as React.CSSProperties}>
+          <FloatingCard className="animate-float-d" style={{ bottom: "60px", right: "30px" }}>
             <MaterialLogo />
           </FloatingCard>
         </div>

@@ -29,14 +29,21 @@ export default function ServicesSection() {
           <p className="text-blue-400 text-[11px] font-semibold uppercase tracking-widest mb-2">
             What I Do
           </p>
-          <h2 className="text-2xl font-bold text-white mb-3">Services I Offer</h2>
-          <p className="text-slate-500 text-sm leading-relaxed mb-5">
+          <h2 className="text-2xl font-bold mb-3" style={{ color: "var(--text-primary)" }}>
+            Services I Offer
+          </h2>
+          <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--text-muted)" }}>
             End-to-end development services to help businesses and startups bring their ideas to life.
           </p>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-white px-4 py-2 rounded-lg transition-all"
-            style={{ border: "1px solid #1e2d47" }}
+            className="inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg transition-all"
+            style={{
+              color: "var(--text-secondary)",
+              border: "1px solid var(--border-color)",
+            }}
+            onMouseEnter={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "var(--text-primary)")}
+            onMouseLeave={(e) => ((e.currentTarget as HTMLAnchorElement).style.color = "var(--text-secondary)")}
           >
             Explore Services <ArrowRight size={13} />
           </Link>
@@ -48,14 +55,14 @@ export default function ServicesSection() {
             <div
               key={svc.id}
               className="group flex flex-col p-5 rounded-xl transition-all cursor-pointer"
-              style={{ background: "#0f1829", border: "1px solid #1a2744" }}
+              style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
               onMouseEnter={(e) => {
-                (e.currentTarget as HTMLDivElement).style.borderColor = "#233459";
-                (e.currentTarget as HTMLDivElement).style.background = "#131e30";
+                (e.currentTarget as HTMLDivElement).style.borderColor = "var(--border-hover)";
+                (e.currentTarget as HTMLDivElement).style.background = "var(--bg-card-hover)";
               }}
               onMouseLeave={(e) => {
-                (e.currentTarget as HTMLDivElement).style.borderColor = "#1a2744";
-                (e.currentTarget as HTMLDivElement).style.background = "#0f1829";
+                (e.currentTarget as HTMLDivElement).style.borderColor = "var(--border-color)";
+                (e.currentTarget as HTMLDivElement).style.background = "var(--bg-card)";
               }}
             >
               <div
@@ -64,8 +71,12 @@ export default function ServicesSection() {
               >
                 {iconMap[svc.icon] ?? <Code2 size={22} />}
               </div>
-              <h3 className="text-white font-semibold text-sm mb-2">{svc.title}</h3>
-              <p className="text-slate-500 text-xs leading-relaxed flex-1 mb-4">{svc.description}</p>
+              <h3 className="font-semibold text-sm mb-2" style={{ color: "var(--text-primary)" }}>
+                {svc.title}
+              </h3>
+              <p className="text-xs leading-relaxed flex-1 mb-4" style={{ color: "var(--text-muted)" }}>
+                {svc.description}
+              </p>
               <button className={`flex items-center gap-1.5 text-xs font-medium ${svc.color} transition-all group-hover:gap-2.5`}>
                 Learn More <ArrowRight size={11} />
               </button>

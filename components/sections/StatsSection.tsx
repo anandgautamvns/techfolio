@@ -23,13 +23,13 @@ export default function StatsSection() {
   return (
     <div
       className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-8"
-      style={{ borderTop: "1px solid #1a2744", borderBottom: "1px solid #1a2744" }}
+      style={{ borderTop: "1px solid var(--border-color)", borderBottom: "1px solid var(--border-color)" }}
     >
       {(stats ?? []).map((stat, i) => (
         <div
           key={stat.id}
           className="flex items-center gap-4 p-4 rounded-xl transition-colors"
-          style={{ background: "#0f1829", border: "1px solid #1a2744" }}
+          style={{ background: "var(--bg-card)", border: "1px solid var(--border-color)" }}
         >
           <div
             className="flex items-center justify-center w-11 h-11 rounded-xl shrink-0"
@@ -38,7 +38,9 @@ export default function StatsSection() {
             {iconMap[stat.icon] ?? <Briefcase size={22} />}
           </div>
           <div>
-            <p className="text-2xl font-extrabold text-white leading-tight">{stat.value}</p>
+            <p className="text-2xl font-extrabold leading-tight" style={{ color: "var(--text-primary)" }}>
+              {stat.value}
+            </p>
             <p className="text-xs text-slate-500 mt-0.5">{stat.label}</p>
           </div>
         </div>

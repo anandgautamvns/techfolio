@@ -21,6 +21,9 @@ const portfolioSlice = createSlice({
     toggleTheme(state) {
       state.isDark = !state.isDark;
     },
+    setTheme(state, action: PayloadAction<boolean>) {
+      state.isDark = action.payload;
+    },
     setActiveNav(state, action: PayloadAction<string>) {
       state.activeNav = action.payload;
     },
@@ -33,7 +36,7 @@ const portfolioSlice = createSlice({
   },
 });
 
-export const { toggleTheme, setActiveNav, toggleMobileMenu, closeMobileMenu } =
+export const { toggleTheme, setTheme, setActiveNav, toggleMobileMenu, closeMobileMenu } =
   portfolioSlice.actions;
 
 export default portfolioSlice.reducer;
