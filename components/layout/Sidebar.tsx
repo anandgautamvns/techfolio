@@ -6,7 +6,7 @@ import {
   Home, User, Code2, Briefcase, FolderOpen,
   Layers, BookOpen, Mail, Download, Sun, Moon, Menu, X,
 } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LinkedinIcon, NaukriIcon } from "@/components/ui/SocialIcons";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { toggleTheme, toggleMobileMenu, closeMobileMenu } from "@/lib/features/portfolioSlice";
 
@@ -22,10 +22,9 @@ const navItems = [
 ];
 
 const socials = [
-  { href: "#", Icon: GithubIcon,    label: "GitHub" },
-  { href: "#", Icon: LinkedinIcon,  label: "LinkedIn" },
-  { href: "#", Icon: TwitterIcon,   label: "Twitter" },
-  { href: "#", Icon: InstagramIcon, label: "Instagram" },
+  { href: "https://github.com/anandgautamvns", Icon: GithubIcon,    label: "GitHub" },
+  { href: "https://www.linkedin.com/in/anandgautamvns/", Icon: LinkedinIcon,  label: "LinkedIn" },
+  { href: "https://www.naukri.com/mnjuser/profile", Icon: NaukriIcon, label: "Naukri" },
 ];
 
 export default function Sidebar() {

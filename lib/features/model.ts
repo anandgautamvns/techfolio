@@ -10,7 +10,7 @@ export type Profile = {
   location: string;
   currentLocation: string;
   cvUrl: string;
-  socials: { github: string; linkedin: string; twitter: string; instagram: string };
+  socials: { github: string; linkedin: string; twitter: string; naukri: string; instagram: string };
 };
 
 export type Stat = { id: number; value: string; label: string; icon: string };
