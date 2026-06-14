@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LinkedinIcon, NaukriIcon } from "@/components/ui/SocialIcons";
 import { useGetProfileQuery } from "@/lib/features/portfolioApi";
 
 export default function ContactPage() {
@@ -80,9 +80,9 @@ export default function ContactPage() {
               className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-500/40 transition-all">
               <LinkedinIcon size={16} />
             </a>
-            <a href={profile?.socials.twitter} target="_blank" rel="noopener noreferrer"
+            <a href={profile?.socials.naukri} target="_blank" rel="noopener noreferrer"
               className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-sky-500 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-500/40 transition-all">
-              <TwitterIcon size={16} />
+              <NaukriIcon size={16} />
             </a>
           </div>
         </div>

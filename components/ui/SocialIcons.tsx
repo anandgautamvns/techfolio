@@ -29,3 +29,12 @@ export function InstagramIcon({ size = 16 }: { size?: number }) {
     </svg>
   );
 }
+
+export function NaukriIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 13H5V7h14v10z" />
+      <path d="M7 9h2v6H7zm4 0h2l3 4V9h2v6h-2l-3-4v4h-2z" />
+    </svg>
+  );
+}
