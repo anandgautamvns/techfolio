@@ -1,5 +1,5 @@
 {
-  "story": "I'm a passionate Full Stack Developer with 8+ years of experience building products that users love. I started my journey as a frontend developer and gradually expanded into backend, mobile, and DevOps — which gives me a rare end-to-end perspective on software delivery.",
+  "story": "I'm a passionate Full Stack Developer with 8 years of experience building products that users love. I started my journey as a frontend developer and gradually expanded into backend, mobile, and DevOps — which gives me a rare end-to-end perspective on software delivery.",
   "mission": "I believe great software is the intersection of clean code, thoughtful UX, and reliable infrastructure. My mission is to help startups and businesses ship faster without sacrificing quality.",
   "funFacts": [
     "☕ Coffee-driven developer",
@@ -11,7 +11,17 @@
     {
       "degree": "B.Tech. Information Technology",
       "school": "Kamla Nehru Institute of Technology, Sultanpur, Uttar Pradesh, India",
-      "year": "2018"
+      "year": "2014-2018"
+    },
+    {
+      "degree": "Intermediate. PCM",
+      "school": "Jawahar Navodaya Vidyalaya, Varanasi, Uttar Pradesh, India",
+      "year": "2012"
+    },
+    {
+      "degree": "High School. PCM",
+      "school": "Jawahar Navodaya Vidyalaya, Varanasi, Uttar Pradesh, India",
+      "year": "2010"
     }
   ]
 }

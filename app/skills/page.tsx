@@ -2,7 +2,7 @@
 
 import { useGetSkillsQuery } from "@/lib/features/portfolioApi";
 
-const categories = ["Frontend", "Backend", "Mobile", "Database", "DevOps"];
+const categories = ["Frontend", "Backend", "Mobile", "Database", "Cloud & DevOps", "Tools", "Testing", "Architecture"];
 
 export default function SkillsPage() {
   const { data: skills } = useGetSkillsQuery();

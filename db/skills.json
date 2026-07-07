@@ -1,74 +1,266 @@
 [
   {
     "id": 1,
-    "name": "React / Next.js",
-    "level": 95,
+    "name": "React.js",
+    "level": 98,
     "category": "Frontend"
   },
   {
     "id": 2,
-    "name": "TypeScript",
-    "level": 92,
-    "category": "Frontend"
-  },
-  {
-    "id": 3,
-    "name": "Tailwind CSS",
+    "name": "Next.js",
     "level": 90,
     "category": "Frontend"
   },
   {
+    "id": 3,
+    "name": "TypeScript",
+    "level": 95,
+    "category": "Frontend"
+  },
+  {
     "id": 4,
-    "name": "Node.js",
-    "level": 88,
-    "category": "Backend"
+    "name": "JavaScript",
+    "level": 95,
+    "category": "Frontend"
   },
   {
     "id": 5,
-    "name": "NestJS",
-    "level": 82,
-    "category": "Backend"
+    "name": "Redux",
+    "level": 95,
+    "category": "Frontend"
   },
   {
     "id": 6,
-    "name": "GraphQL",
-    "level": 80,
-    "category": "Backend"
+    "name": "Redux Toolkit",
+    "level": 90,
+    "category": "Frontend"
   },
   {
     "id": 7,
-    "name": "Flutter",
+    "name": "RTK Query",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 8,
+    "name": "Redux-Saga",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 9,
+    "name": "Redux-Thunk",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 10,
+    "name": "HTML5 & CSS3",
+    "level": 95,
+    "category": "Frontend"
+  },
+  {
+    "id": 11,
+    "name": "SCSS / LESS",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 12,
+    "name": "Apollo Graphql",
+    "level": 90,
+    "category": "Frontend"
+  },
+  {
+    "id": 13,
+    "name": "Ant Design",
+    "level": 95,
+    "category": "Frontend"
+  },
+  {
+    "id": 14,
+    "name": "Material UI",
+    "level": 92,
+    "category": "Frontend"
+  },
+  {
+    "id": 15,
+    "name": "React Native",
+    "level": 96,
+    "category": "Mobile"
+  },
+  {
+    "id": 16,
+    "name": "Expo",
+    "level": 90,
+    "category": "Mobile"
+  },
+  {
+    "id": 17,
+    "name": "React-Native-Cli",
+    "level": 90,
+    "category": "Mobile"
+  },
+  {
+    "id": 18,
+    "name": "Android",
+    "level": 88,
+    "category": "Mobile"
+  },
+  {
+    "id": 19,
+    "name": "iOS",
     "level": 85,
     "category": "Mobile"
   },
   {
-    "id": 8,
-    "name": "MongoDB",
-    "level": 78,
-    "category": "Database"
+    "id": 20,
+    "name": "Xcode",
+    "level": 85,
+    "category": "Mobile"
   },
   {
-    "id": 9,
-    "name": "PostgreSQL",
-    "level": 80,
-    "category": "Database"
+    "id": 21,
+    "name": "Android Studio",
+    "level": 85,
+    "category": "Mobile"
   },
   {
-    "id": 10,
-    "name": "AWS",
+    "id": 22,
+    "name": "Node.js",
+    "level": 90,
+    "category": "Backend"
+  },
+  {
+    "id": 23,
+    "name": "Express.js",
+    "level": 88,
+    "category": "Backend"
+  },
+  {
+    "id": 24,
+    "name": "Python",
+    "level": 85,
+    "category": "Backend"
+  },
+  {
+    "id": 25,
+    "name": "Django",
+    "level": 82,
+    "category": "Backend"
+  },
+  {
+    "id": 26,
+    "name": "GraphQL",
+    "level": 88,
+    "category": "Backend"
+  },
+  {
+    "id": 27,
+    "name": "REST APIs",
+    "level": 95,
+    "category": "Backend"
+  },
+  {
+    "id": 28,
+    "name": "Kafka",
     "level": 75,
-    "category": "DevOps"
+    "category": "Backend"
   },
   {
-    "id": 11,
-    "name": "Docker",
+    "id": 29,
+    "name": "Redis",
     "level": 78,
-    "category": "DevOps"
+    "category": "Backend"
   },
   {
-    "id": 12,
+    "id": 30,
+    "name": "PostgreSQL",
+    "level": 90,
+    "category": "Database"
+  },
+  {
+    "id": 31,
+    "name": "MySQL",
+    "level": 88,
+    "category": "Database"
+  },
+  {
+    "id": 32,
+    "name": "MongoDB",
+    "level": 85,
+    "category": "Database"
+  },
+  {
+    "id": 33,
+    "name": "Firebase",
+    "level": 82,
+    "category": "Database"
+  },
+  {
+    "id": 34,
+    "name": "AWS",
+    "level": 85,
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": 35,
+    "name": "Docker",
+    "level": 82,
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": 36,
+    "name": "Kubernetes",
+    "level": 75,
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": 37,
+    "name": "Jenkins",
+    "level": 80,
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": 38,
     "name": "CI/CD",
-    "level": 76,
-    "category": "DevOps"
+    "level": 85,
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": 39,
+    "name": "Git & GitLab",
+    "level": 95,
+    "category": "Tools"
+  },
+  {
+    "id": 40,
+    "name": "Jest",
+    "level": 88,
+    "category": "Testing"
+  },
+  {
+    "id": 41,
+    "name": "React Testing Library",
+    "level": 85,
+    "category": "Testing"
+  },
+  {
+    "id": 42,
+    "name": "PyTest",
+    "level": 80,
+    "category": "Testing"
+  },
+  {
+    "id": 43,
+    "name": "System Design",
+    "level": 85,
+    "category": "Architecture"
+  },
+  {
+    "id": 44,
+    "name": "Architecture Design",
+    "level": 82,
+    "category": "Architecture"
   }
 ]
