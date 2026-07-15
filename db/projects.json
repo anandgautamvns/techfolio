@@ -1,100 +1,327 @@
 [
   {
     "id": 1,
-    "title": "SaaS Dashboard Platform",
-    "description": "A multi-tenant SaaS dashboard with real-time analytics, role-based access, and custom reporting.",
-    "image": "/projects/saas.png",
+    "title": "DU E-Commerce Mobile Application",
+    "description": "Enterprise telecom e-commerce ecosystem for Consumer, Dealer, and Courier applications. Built cross-platform mobile apps with role-based authentication, order management, inventory tracking, delivery workflows, and real-time updates.",
+    "image": "/projects/du-mobile.png",
     "tech": [
-      "Next.js",
+      "React Native",
       "TypeScript",
-      "NestJS",
-      "PostgreSQL",
-      "Redis"
+      "Redux Toolkit",
+      "RTK Query",
+      "Apollo GraphQL",
+      "Node.js",
+      "Android",
+      "iOS",
+      "GraphQL",
+      "Xcode",
+      "Android Studio"
     ],
     "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
-    "featured": true,
-    "category": "Web"
-  },
-  {
-    "id": 2,
-    "title": "E-Commerce Mobile App",
-    "description": "Full-featured Flutter app with cart, payments via Stripe, push notifications, and offline support.",
-    "image": "/projects/ecommerce.png",
-    "tech": [
-      "Flutter",
-      "Dart",
-      "Firebase",
-      "Stripe"
-    ],
-    "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
+    "demo": "",
     "featured": true,
     "category": "Mobile"
   },
   {
-    "id": 3,
-    "title": "GraphQL API Gateway",
-    "description": "Federated GraphQL gateway that aggregates 5 microservices with caching, auth, and rate limiting.",
-    "image": "/projects/api.png",
+    "id": 2,
+    "title": "NC Gen AI - Telecom Solution",
+    "description": "AI-powered telecom platform that automates customer support, knowledge retrieval, and business workflows using Generative AI. Developed scalable frontend and backend services with AI integrations.",
+    "image": "/projects/genai.png",
     "tech": [
-      "Node.js",
-      "GraphQL",
-      "Apollo",
-      "Docker",
-      "AWS"
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "RTK Query",
+      "Python",
+      "Django",
+      "REST API",
+      "Generative AI"
     ],
     "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
+    "demo": "",
     "featured": true,
-    "category": "Backend"
+    "category": "AI"
+  },
+  {
+    "id": 3,
+    "title": "DU E-Commerce Web Platform",
+    "description": "Telecom-focused e-commerce platform enabling customers to browse, purchase, and manage telecom products. Built with Next.js using SSR/SSG, GraphQL, and scalable Node.js APIs.",
+    "image": "/projects/du-web.png",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "RTK Query",
+      "Node.js",
+      "GraphQL"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": true,
+    "category": "Web"
   },
   {
     "id": 4,
-    "title": "Real-Time Chat App",
-    "description": "WebSocket-based chat application with rooms, file sharing, and message encryption.",
-    "image": "/projects/chat.png",
+    "title": "SVB Payment Dashboard",
+    "description": "Cloud-native payment operations dashboard for Silicon Valley Bank with maker-checker approvals, payment reconciliation, audit logs, advanced search, and AWS serverless architecture.",
+    "image": "/projects/svb.png",
     "tech": [
       "React",
-      "Socket.io",
-      "Node.js",
-      "MongoDB"
+      "Redux",
+      "TypeScript",
+      "GraphQL",
+      "AWS Lambda",
+      "DynamoDB",
+      "S3",
+      "AWS Cognito"
     ],
     "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
+    "demo": "",
+    "featured": true,
+    "category": "FinTech"
+  },
+  {
+    "id": 5,
+    "title": "Successware",
+    "description": "Enterprise business management platform for home service companies covering booking, dispatching, invoicing, technician tracking, and payment processing. Improved performance by over 70% and implemented real-time technician tracking.",
+    "image": "/projects/successware.png",
+    "tech": [
+      "React",
+      "React Native",
+      "Redux",
+      "TypeScript",
+      "GraphQL",
+      "Spring Boot",
+      "Java",
+      "Kafka",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": true,
+    "category": "Enterprise"
+  },
+  {
+    "id": 17,
+    "title": "Successware Mobile",
+    "description": "Enterprise B2B mobile application for service-oriented businesses, enabling booking, dispatching, technician management, invoicing, and field operations. Led the successful technical handover from the ThoughtWorks China team, modernized legacy code, implemented new features, and optimized application performance for Android and iOS.",
+    "image": "/projects/successware-mobile.png",
+    "tech": [
+      "React Native",
+      "TypeScript",
+      "Redux",
+      "Redux Saga",
+      "React Navigation",
+      "GraphQL",
+      "Java",
+      "Spring Boot",
+      "Kafka",
+      "PostgreSQL",
+      "MongoDB",
+      "AWS",
+      "Android",
+      "iOS",
+      "Jenkins",
+      "SonarQube"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": true,
+    "category": "Mobile"
+  },
+  {
+    "id": 6,
+    "title": "Mike IP Suite",
+    "description": "Legal-tech platform providing trademark search, trademark monitoring, patent management, and IP portfolio management for law firms. Developed multiple production modules and REST APIs.",
+    "image": "/projects/mikeipsuite.png",
+    "tech": [
+      "React",
+      "Redux",
+      "Python",
+      "Django",
+      "Ant Design",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "LegalTech"
+  },
+  {
+    "id": 7,
+    "title": "Mike DocuSieve",
+    "description": "AI-powered contract drafting and review platform using React Office Add-ins for Microsoft Word and Excel, enabling intelligent document analysis and editing for legal professionals.",
+    "image": "/projects/docusieve.png",
+    "tech": [
+      "React",
+      "React Office Add-ins",
+      "Python",
+      "Django",
+      "Microsoft Office",
+      "AWS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "AI"
+  },
+  {
+    "id": 8,
+    "title": "Mike Iris Mobile",
+    "description": "Cross-platform mobile application for legal administrators to manage trademarks, reminders, and case notes with secure authentication and offline capabilities.",
+    "image": "/projects/mikeiris.png",
+    "tech": [
+      "React Native",
+      "Redux",
+      "Python",
+      "Django",
+      "Expo",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "Mobile"
+  },
+  {
+    "id": 13,
+    "title": "Mike Iris",
+    "description": "Administrative web application for the IP Suite ecosystem, enabling legal teams to manage portfolios, workflows, and customer operations through an intuitive dashboard.",
+    "image": "/projects/mike-iris.png",
+    "tech": [
+      "React",
+      "Redux",
+      "Python",
+      "Django",
+      "PostgreSQL"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
     "featured": false,
     "category": "Web"
   },
   {
-    "id": 5,
-    "title": "DevOps CI/CD Pipeline",
-    "description": "Automated pipeline with GitHub Actions, Docker, and AWS ECS deployment with zero downtime.",
-    "image": "/projects/devops.png",
+    "id": 12,
+    "title": "MikeLegal Website",
+    "description": "AI-powered legal platform that automates trademark searching, trademark watching, IP management, and contract proofreading for legal professionals.",
+    "image": "/projects/mikelegal.png",
     "tech": [
-      "GitHub Actions",
-      "Docker",
-      "AWS ECS",
-      "Terraform"
+      "React",
+      "Redux",
+      "Python",
+      "Django",
+      "AWS"
     ],
     "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
+    "demo": "",
     "featured": false,
-    "category": "DevOps"
+    "category": "LegalTech"
   },
   {
-    "id": 6,
-    "title": "AI Content Generator",
-    "description": "LLM-powered tool for generating and editing blog posts, social captions, and ad copy.",
-    "image": "/projects/ai.png",
+    "id": 9,
+    "title": "EasemyGST",
+    "description": "GST compliance platform supporting multi-GSTIN filing, ERP integration, invoice processing, and e-way bill generation for businesses across India.",
+    "image": "/projects/easemygst.png",
     "tech": [
-      "Next.js",
-      "OpenAI API",
-      "Prisma",
-      "PostgreSQL"
+      "React",
+      "Redux",
+      "Vue.js",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "JavaScript"
     ],
     "github": "https://github.com/anandgautamvns",
-    "demo": "https://demo.example.com",
+    "demo": "",
     "featured": false,
-    "category": "AI"
+    "category": "Web"
+  },
+  {
+    "id": 10,
+    "title": "Supplymint",
+    "description": "Retail inventory and Open-to-Buy planning platform enabling procurement, budgeting, inventory planning, and supply chain management for retailers.",
+    "image": "/projects/supplymint.png",
+    "tech": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Bootstrap",
+      "HTML5",
+      "CSS3"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "Retail"
+  },
+  {
+    "id": 11,
+    "title": "NASA Mission Control",
+    "description": "Mission Control dashboard developed for NASA to monitor mission activities, visualize operational data, and provide real-time insights through an interactive web interface.",
+    "image": "/projects/nasa-mission-control.png",
+    "tech": [
+      "React",
+      "TypeScript",
+      "Redux",
+      "JavaScript"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "Enterprise"
+  },
+  {
+    "id": 14,
+    "title": "HealthTrack",
+    "description": "Healthcare management platform for hospitals and clinics with patient management, analytics dashboards, and role-based workflows built using Angular and NgRx.",
+    "image": "/projects/healthtrack.png",
+    "tech": [
+      "Angular",
+      "NgRx",
+      "RxJS",
+      "Angular Material",
+      "Highcharts",
+      "SCSS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "Healthcare"
+  },
+  {
+    "id": 15,
+    "title": "e-MELA",
+    "description": "Multi-vendor e-commerce platform supporting customers, sellers, administrators, payment processing, and checkout workflows for online shopping.",
+    "image": "/projects/emela.png",
+    "tech": [
+      "JavaScript",
+      "Bootstrap",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "E-Commerce"
+  },
+  {
+    "id": 16,
+    "title": "Online Hostel Management System",
+    "description": "Web-based hostel management system for online room allocation, student registration, room management, and administrative operations.",
+    "image": "/projects/hostel-management.png",
+    "tech": [
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/anandgautamvns",
+    "demo": "",
+    "featured": false,
+    "category": "Education"
   }
 ]
